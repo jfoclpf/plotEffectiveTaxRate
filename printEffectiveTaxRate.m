@@ -17,7 +17,8 @@ function printEffectiveTaxRate(tb, tr)
   clear x;
   clear y;
 
-  x = 0:1000:100000;
+  
+  x = 1:10:(tb(numtb)*1.2);
 
   for i=1:numtr
     tr(i)=tr(i).* 0.01;
@@ -45,4 +46,5 @@ function printEffectiveTaxRate(tb, tr)
   ylabel("Effective Tax Rate (%)");
 
 endfunction
+
 
