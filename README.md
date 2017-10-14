@@ -20,7 +20,7 @@ Therefore the syntax is
 
 # Example
 
-An example for the Portuguese income tax progressive for the year 2017
+An example for the Portuguese progressive income tax for the year 2017
 
 `printEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48])`
 
