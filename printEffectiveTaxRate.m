@@ -39,6 +39,10 @@ function printEffectiveTaxRate(tb, tr)
   y = y + ( (( k(i-1) + tr(i)*(x-tb(i)) )./x) .* (x>=tb(i)));
 
   plot(x,y)
+  
+  title ("Effective Income Tax");
+  xlabel("Income");
+  ylabel("Effective Tax Rate (%)");
 
 endfunction
 
