@@ -8,7 +8,7 @@ source: <a href="http://www.investorwords.com/17190/effective_income_tax_rate.ht
 
 This Octave function prints the Effective Tax Rate for Income Progressive Taxes.
 
-Using <a href="https://www.gnu.org/software/octave/">Octave</a> simply run the following function, taking as parameters arrayss including the <a href="https://en.wikipedia.org/wiki/Tax_bracket">Tax Brackets</a> and the corresponding <a href="https://en.wikipedia.org/wiki/Tax_rate">Tax Rates</a> for each tax bracket.
+Using <a href="https://www.gnu.org/software/octave/">Octave</a> simply run the following function, taking as parameters arrays including the <a href="https://en.wikipedia.org/wiki/Tax_bracket">Tax Brackets</a> and the corresponding <a href="https://en.wikipedia.org/wiki/Tax_rate">Tax Rates</a> for each Tax Bracket.
 
 Therefore the syntax is
 
