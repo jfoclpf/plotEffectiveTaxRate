@@ -4,7 +4,7 @@
 #for example tr = [14.5, 28.5, 37, 45, 48]; 
 #Income interval
 
-function printEffectiveTaxRate(tb, tr)
+function plotEffectiveTaxRate(tb, tr)
 
   numtb = numel (tb);
   numtr = numel (tr);
