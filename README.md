@@ -12,11 +12,24 @@ Using <a href="https://www.gnu.org/software/octave/">Octave</a> simply run the f
 
 Therefore the syntax is
 
-`plotEffectiveTaxRate( tax_brackets_array, tax_rates_array)`
+`plotEffectiveTaxRate( tax_brackets_array, tax_rates_array, colour_code [optional])`
 
  * The first item of `tax_brackets_array` must always be zero. 
  * The `tax_rates_array` values must be inserted already as percentages, i.e., for a 20% tax, use `20` inseatd of `.2`  
  * The arrays must have the same size.
+
+# Colour codes
+
+The colour codes are the same applied for the Octave function `plot`, namely
+
+* ‘k’	blacK
+* ‘r’	Red
+* ‘g’	Green
+* ‘b’	Blue
+* ‘y’	Yellow
+* ‘m’	Magenta
+* ‘c’	Cyan
+* ‘w’	White
 
 # Example
 
@@ -27,3 +40,26 @@ An example for the Portuguese progressive income tax for the year 2017
 which outputs
 
 <img src="https://github.com/jfoclpf/plotEffectiveTaxRate/blob/master/images/graph.png?raw=true"></img>
+
+Another example for the Portuguese progressive income tax for the year 2018
+
+`plotEffectiveTaxRate([0, 7091, 10700, 20261, 25000, 36856, 80640], [14.5, 23, 28.5, 35, 37, 45, 48], "r")`
+
+which outputs
+
+<img src="https://github.com/jfoclpf/plotEffectiveTaxRate/blob/master/images/graph2.png?raw=true"></img>
+
+# Multiple charts
+
+For multiple charts use the Octave commands `hold on` and `hold off`. For example
+
+ `plotEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48], "b")`<br>
+ `hold on`<br>
+ `plotEffectiveTaxRate([0, 7091, 10700, 20261, 25000, 36856, 80640], [14.5, 23, 28.5, 35, 37, 45, 48], "r")`<br>
+ `hold off`<br>
+ 
+ which outpurts
+ 
+ <img src="https://github.com/jfoclpf/plotEffectiveTaxRate/blob/master/images/graph3.png?raw=true"></img>
+ 
+
