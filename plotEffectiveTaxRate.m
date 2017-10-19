@@ -4,7 +4,7 @@
 #for example tr = [14.5, 28.5, 37, 45, 48]; 
 #Income interval
 
-function plotEffectiveTaxRate(tb, tr)
+function plotEffectiveTaxRate(tb, tr, colour)
 
   numtb = numel (tb);
   numtr = numel (tr);
@@ -17,6 +17,10 @@ function plotEffectiveTaxRate(tb, tr)
   clear x;
   clear y;
 
+  if (exist("colour", "var") != 1)
+    colour = "b";
+  endif
+  
   
   x = 1:10:(tb(numtb)*1.2);
 
@@ -39,12 +43,10 @@ function plotEffectiveTaxRate(tb, tr)
   i=numtr;
   y = y + ( (( k(i-1) + tr(i)*(x-tb(i)) )./x) .* (x>=tb(i)));
 
-  plot(x,y)
+  plot(x,y, colour)
   
   title ("Effective Income Tax");
   xlabel("Income");
   ylabel("Effective Tax Rate (%)");
 
 endfunction
-
-
