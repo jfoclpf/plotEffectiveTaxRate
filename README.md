@@ -26,4 +26,4 @@ An example for the Portuguese progressive income tax for the year 2017
 
 which outputs
 
-<img src="https://lh6.googleusercontent.com/c_iPCOQYY6JgRsSHZRTZrB2uIvPUZAb-E5r2v4Qwm66QKxgxK7SfOa6ufjt6nSvHWHuGRKA4hIRVWlI=w1309-h656"></img>
+<img src="https://drive.google.com/uc?export=download&id=0ByUTQC-G0qaCV1FLQVVPSlpmT0U"></img>
