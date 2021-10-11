@@ -35,7 +35,21 @@ The colour codes are the same applied for the Octave function `plot`, namely
 
 An example for the Portuguese progressive income tax for the year 2017
 
-`plotEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48])`
+The table for the tax brackets is
+
+| Value (€)               | Tax (%)  |
+| ----------------------- | -------- |
+|   less 7091             | 14.5     |
+| between 7091 and 20261  | 28.5     |
+| between 20261 and 40552 | 37       |
+| between 40552 and 80640 | 45       |
+|   more than 80640       | 48       |
+
+Thus, you need to run
+
+```octave
+plotEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48])
+```
 
 which outputs
 
@@ -43,7 +57,9 @@ which outputs
 
 Another example for the Portuguese progressive income tax for the year 2018
 
-`plotEffectiveTaxRate([0, 7091, 10700, 20261, 25000, 36856, 80640], [14.5, 23, 28.5, 35, 37, 45, 48], "r")`
+```octave
+plotEffectiveTaxRate([0, 7091, 10700, 20261, 25000, 36856, 80640], [14.5, 23, 28.5, 35, 37, 45, 48], "r")
+```
 
 which outputs
 
@@ -53,10 +69,12 @@ which outputs
 
 For multiple charts use the Octave commands `hold on` and `hold off`. For example
 
- `plotEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48], "b")`<br>
- `hold on`<br>
- `plotEffectiveTaxRate([0, 7091, 10700, 20261, 25000, 36856, 80640], [14.5, 23, 28.5, 35, 37, 45, 48], "r")`<br>
- `hold off`<br>
+ ```octave
+ plotEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48], "b")
+ hold on
+ plotEffectiveTaxRate([0, 7091, 10700, 20261, 25000, 36856, 80640], [14.5, 23, 28.5, 35, 37, 45, 48], "r")
+ hold off
+ ```
  
  which outpurts
  
