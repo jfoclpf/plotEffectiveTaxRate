@@ -19,7 +19,9 @@ plotEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48])
 
 ## Function syntax
 
-`plotEffectiveTaxRate( tax_brackets_array, tax_rates_array, colour_code [optional])`
+```octave
+plotEffectiveTaxRate(tax_brackets_array, tax_rates_array [, colour_code])
+```
 
  * The first item of `tax_brackets_array` must always be zero. 
  * The `tax_rates_array` values must be inserted already as percentages, i.e., for a 20% tax, use `20` inseatd of `.2`  
