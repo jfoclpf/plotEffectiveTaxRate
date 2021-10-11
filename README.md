@@ -40,13 +40,12 @@ The colour codes are the same applied for the Octave function `plot`, namely
 
 ## Example
 
-An example for the Portuguese progressive income tax for the year 2017
+The Portuguese progressive income tax for the year 2017 is according to the table:
 
-The table for the tax brackets is
 
 | Value (€)               | Tax (%)  |
 | ----------------------- | -------- |
-|   less 7091             | 14.5     |
+|   less than 7091             | 14.5     |
 | between 7091 and 20261  | 28.5     |
 | between 20261 and 40552 | 37       |
 | between 40552 and 80640 | 45       |
