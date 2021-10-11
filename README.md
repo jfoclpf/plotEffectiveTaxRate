@@ -4,13 +4,20 @@ The actual rate at which a taxpayer pays taxes on income accounting for all taxe
 
 source: <a href="http://www.investorwords.com/17190/effective_income_tax_rate.html">investorwords.com</a>
 
-## How to use
+## How to use it
 
-This Octave function plots the Effective Tax Rate for Income Progressive Taxes.
+1. Install [Octave](https://www.gnu.org/software/octave/download)
+2. In Ocatve command line, download the function into a `.m` file
+```octave
+urlwrite("https://raw.githubusercontent.com/jfoclpf/plotEffectiveTaxRate/master/plotEffectiveTaxRate.m", "plotEffectiveTaxRate.m" )
+```
+3. Now run, for example
+```octave
+plotEffectiveTaxRate([0, 7091, 20261, 40552, 80640], [14.5, 28.5, 37, 45, 48])
+```
 
-Using <a href="https://www.gnu.org/software/octave/">Octave</a> simply run the following function, taking as parameters arrays including the <a href="https://en.wikipedia.org/wiki/Tax_bracket">Tax Brackets</a> and the corresponding <a href="https://en.wikipedia.org/wiki/Tax_rate">Tax Rates</a> for each Tax Bracket.
 
-Therefore the syntax is
+## Function syntax
 
 `plotEffectiveTaxRate( tax_brackets_array, tax_rates_array, colour_code [optional])`
 
@@ -18,7 +25,7 @@ Therefore the syntax is
  * The `tax_rates_array` values must be inserted already as percentages, i.e., for a 20% tax, use `20` inseatd of `.2`  
  * The arrays must have the same size.
 
-## Colour codes
+#### Colour codes
 
 The colour codes are the same applied for the Octave function `plot`, namely
 
