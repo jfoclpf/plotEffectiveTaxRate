@@ -1,4 +1,4 @@
-## What is an effective income tax rate
+## What is an effective income tax rate?
 
 The actual rate at which a taxpayer pays taxes on income accounting for all taxes and offsets. The rate is calculated by dividing the total of all taxes paid, less offsets, by the total taxable income. The effective rate is typically lower than the tax bracket, which is currently based on a progressive rate scale.
 
