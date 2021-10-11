@@ -7,7 +7,7 @@ source: <a href="http://www.investorwords.com/17190/effective_income_tax_rate.ht
 ## How to use it
 
 1. Install [Octave](https://www.gnu.org/software/octave/download)
-2. In Ocatve command line, download the function into a `.m` file
+2. In Octave command line, download the function into a `.m` file
 ```octave
 urlwrite("https://raw.githubusercontent.com/jfoclpf/plotEffectiveTaxRate/master/plotEffectiveTaxRate.m", "plotEffectiveTaxRate.m" )
 ```
