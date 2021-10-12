@@ -22,7 +22,7 @@ function plotEffectiveTaxRate(tb, tr, colour)
   endif
   
   
-  x = 1:10:(tb(numtb)*1.2);
+  x = 1:10:(120000);
 
   for i=1:numtr
     tr(i)=tr(i).* 0.01;
@@ -42,11 +42,14 @@ function plotEffectiveTaxRate(tb, tr, colour)
 
   i=numtr;
   y = y + ( (( k(i-1) + tr(i)*(x-tb(i)) )./x) .* (x>=tb(i)));
+  y= y.*100;
 
-  plot(x,y, colour)
+  h = plot(x,y);
   
-  title ("Effective Income Tax");
-  xlabel("Income");
-  ylabel("Effective Tax Rate (%)");
+  title ("Effective Income Tax", "fontsize", 16);
+  xlabel("Income", "fontsize", 14);
+  ylabel("Effective Tax Rate (%)", "fontsize", 14);
+  set(h, "color", colour, "linewidth", 4);
+  set(gca, "linewidth", 2, "fontsize", 18);
 
 endfunction
